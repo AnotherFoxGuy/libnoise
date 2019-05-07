@@ -22,3 +22,7 @@ src/libnoise.dylib
 doc/Doxyfile
 doc/html
 
+
+\.idea/
+
+cmake-build-debug/

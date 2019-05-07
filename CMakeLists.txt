@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.0)
 
-SET ( LIBNOISE_VERSION "1.0.0-cmake" )
+SET(LIBNOISE_VERSION "1.0.0-cmake")
 
 OPTION(BUILD_SHARED_LIBS "Build shared libraries for libnoise" ON)
 OPTION(BUILD_LIBNOISE_DOCUMENTATION "Create doxygen documentation for developers" OFF)
@@ -11,13 +11,13 @@ ADD_SUBDIRECTORY(src)
 
 IF (BUILD_LIBNOISE_UTILS)
     ADD_SUBDIRECTORY(noiseutils)
-ENDIF()
+ENDIF ()
 IF (BUILD_LIBNOISE_EXAMPLES)
     ADD_SUBDIRECTORY(examples)
-ENDIF()
+ENDIF ()
 IF (BUILD_LIBNOISE_DOCUMENTATION)
     ADD_SUBDIRECTORY(doc)
-ENDIF()
+ENDIF ()
 
 
 #ADD_SUBDIRECTORY(samples)
