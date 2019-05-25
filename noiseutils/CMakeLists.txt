@@ -1,5 +1,3 @@
-SET(PROJECT_NAME libnoiseutils)
-
 IF (BUILD_SHARED_LIBS)
     add_library(noiseutils SHARED noiseutils.cpp)
 ELSE ()
@@ -16,7 +14,7 @@ if (CMAKE_CXX_COMPILER_ID MATCHES "GNU")
 endif ()
 
 # Where to look for noise headers
-ADD_DEFINITIONS("-I${PROJECT_SOURCE_DIR}/src")
+INCLUDE_DIRECTORIES(${CMAKE_SOURCE_DIR}/include)
 
 # install include files into /usr/include
 INSTALL(FILES "${PROJECT_SOURCE_DIR}/noiseutils/noiseutils.h" DESTINATION

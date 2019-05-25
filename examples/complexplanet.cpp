@@ -106,7 +106,7 @@
 
 #include <fstream>
 
-#include <noise/noise.h>
+#include <noise.h>
 
 #include "noiseutils.h"
 

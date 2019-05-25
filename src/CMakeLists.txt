@@ -1,6 +1,4 @@
-SET(PROJECT_NAME libnoise)
-
-INCLUDE_DIRECTORIES(noise)
+INCLUDE_DIRECTORIES(${CMAKE_SOURCE_DIR}/include)
 
 set(libSrcs ${libSrcs}
         noisegen.cpp
@@ -68,7 +66,7 @@ if (CMAKE_CXX_COMPILER_ID MATCHES "GNU")
 endif ()
 
 # install include files into /usr/include
-INSTALL(DIRECTORY "${PROJECT_SOURCE_DIR}/src/noise" DESTINATION
+INSTALL(DIRECTORY "${PROJECT_SOURCE_DIR}/include/" DESTINATION
         "${CMAKE_INSTALL_PREFIX}/include")
 
 # install libraries into /lib

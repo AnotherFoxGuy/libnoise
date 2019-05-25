@@ -23,7 +23,7 @@
 // off every 'zig'.)
 //
 
-#include <noise/noise.h>
+#include <noise.h>
 
 #include "noiseutils.h"
 
@@ -38,7 +38,7 @@ void CreateTextureColor (utils::RendererImage& renderer);
 // Given a noise module, this function renders a flat square texture map and
 // writes it to a Windows bitmap (*.bmp) file.  Because the texture map is
 // square, its width is equal to its height.  The texture map can be seamless
-// (tileable) or non-seamless. 
+// (tileable) or non-seamless.
 void CreatePlanarTexture (const module::Module& noiseModule, bool seamless,
   int height, const char* filename);
 

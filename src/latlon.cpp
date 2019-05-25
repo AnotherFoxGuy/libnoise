@@ -20,7 +20,7 @@
 // off every 'zig'.)
 //
 
-#include "noise/latlon.h"
+#include "latlon.h"
 
 using namespace noise;
 

@@ -20,9 +20,9 @@
 // off every 'zig'.)
 //
 
-#include "noise/noisegen.h"
-#include "noise/interp.h"
-#include "noise/vectortable.h"
+#include "noisegen.h"
+#include "interp.h"
+#include "vectortable.h"
 
 using namespace noise;
 
